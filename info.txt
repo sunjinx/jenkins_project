@@ -1,2 +1,18 @@
 生成报告命令
 allure generate report/ -o report/html --clean
+
+jenkins设置 git
+1.在https://github.com创建库
+2.增加忽略文件到项目路径下，文件名为.gitignore
+    mac:使用touch创建隐藏文件
+    windows:echo xx > .gitignore 创建后，然后将内容改为以下内容
+    .idea
+    .pytest_cache
+    report
+    __pycache__
+3.在项目目录下，输入以下命令
+     git init
+     git add .
+     git commit -m "first commit"
+     git remote add origin   github.com下的项目地址  https://github.com/sunjinx/jenkins_project.git
+     git push -u origin master
