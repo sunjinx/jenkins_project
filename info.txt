@@ -1,3 +1,6 @@
+启动jenkins
+  启动tomcat
+  进入到jenkins.war路径下 java -jar jenkins.war
 生成报告命令
 allure generate report/ -o report/html --clean
 
@@ -14,5 +17,10 @@ jenkins设置 git
      git init
      git add .
      git commit -m "first commit"
-     git remote add origin   github.com下的项目地址  https://github.com/sunjinx/jenkins_project.git
+     #git remote add origin   github.com下的项目地址  https://github.com/sunjinx/jenkins_project.git
+     git remote set-url origin https://<your_token>@github.com/<USERNAME>/<REPO>.git
      git push -u origin master
+登陆token
+     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
+
+git remote set-url origin https://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@github.com/sunjinx/jenkins_project.git

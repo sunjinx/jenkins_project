@@ -1,0 +1,6 @@
+配置pytest环境变量
+  mac: export PATH=$PATH:/Library/Frameworks/python.framework/wersions/3.6/bin /pytest
+  windiws: export PATH=$PATH;F:\Python36\Scripts\pytest
+
+  jenkins项目构建失败报错：Failed to connect to github.com port 443
+  解决方法：git config --global --unset http.proxy
